@@ -1,0 +1,32 @@
+
+Folder Structure ------------------------------------------------------------
+
+📂 src
+ ┣ 📂 components  ← 🏗️ (Componentes reutilizables)
+ ┃ ┣ 📄 Header.jsx
+ ┃ ┣ 📄 Footer.jsx
+ ┃ ┗ 📄 Button.jsx (otros componentes pequeños)
+ ┣ 📂 pages  ← 📌 (Páginas completas de la app)
+ ┃ ┣ 📄 Home.jsx
+ ┃ ┣ 📄 Productos.jsx
+ ┃ ┗ 📄 Contacto.jsx
+ ┣ 📂 assets  ← 🎨 (Imágenes, íconos, estilos, fuentes)
+ ┃ ┣ 📂 images
+ ┃ ┗ 📄 styles.css
+ ┣ 📄 App.jsx  ← 📌 (Componente principal)
+ ┣ 📄 index.jsx  ← 🔄 (Punto de entrada)
+ ┗ 📄 package.json
+
+
+Ejemplo estructura de carpetas llamando una base de datos
+
+ src/
+│
+├── components/        # Componentes React
+│   ├── Productos.jsx  # Componente donde se muestran los productos
+│
+├── services/          # Funciones para interactuar con la API
+│   ├── api.js         # Aquí iría la lógica para hacer el fetch
+│
+├── App.jsx            # Componente principal
+└── index.js           # Punto de entrada de la app
