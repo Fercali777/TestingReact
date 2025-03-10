@@ -1,8 +1,8 @@
-function footer() {
+function Footer() {
     return (
         <footer>
             All rights reserved
         </footer>
     )
 }
-export default footer;
+export default Footer;
