@@ -10,7 +10,7 @@ import CharacterList from "./components/CharacterList";
 
 function App() {
     return (
-        <div>
+        <div className='container'>
             <Header />
             <CharacterList />
             <Footer />

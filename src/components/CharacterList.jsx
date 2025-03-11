@@ -8,16 +8,29 @@ export default function CharacterList() {
             .then(response => response.json())
             .then(data => setCharacters(data.results))
             .catch(error => console.error("Error al obtener los personajes:", error));
+            console.log ("I did fetch")
     }, []);
 
     return (
-        <div>
-            <h1>Personajes de Rick and Morty</h1>
-            <ul>
+        <div className="container">
+            <h1>The Rickest Gallery in the Multiverse!</h1>
+            <div className="container-cards">
                 {characters.map(character => (
-                    <li key={character.id}>{character.name}</li>
+                    
+                    <div className="card flex" key={character.id}>
+                        <img src={character.image} alt={character.name}></img>
+                        {character.name}, { }
+                        {character.species}, { }
+                        {character.gender}
+                    </div>
+
+
+
+   
+                        
+                    
                 ))}
-            </ul>
+            </div>
         </div>
     );
 }

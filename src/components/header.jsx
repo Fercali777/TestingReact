@@ -1,7 +1,9 @@
 function Header () {
 return (
-<header>
-    <div className="logo">Logo</div>
+<header className="flex space-around">
+    <div className="logo">
+        <img src="/img/logo.png" />
+    </div>
     <nav>
         <a href="#" >Home</a>
         <a href="#">Details</a>

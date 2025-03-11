@@ -1,42 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+header {
+ 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#root{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.container{
+  min-width: 1200px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container-cards{
+  display: grid
+  ;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex {
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.space-around {
+  justify-content: space-around;
 }
-
 .card {
-  padding: 2em;
+  flex-direction: column;
+  color: rgb(202, 255, 89);
+  font-family: 'Trebuchet MS', sans-serif ;
+  font-size: 20px;
+  margin: 10px, 0px, 10px, 0px;
+ 
 }
 
-.read-the-docs {
-  color: #888;
+h1 {
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(202, 255, 89);
+  font-family: 'Trebuchet MS', sans-serif ;
+  font-size: 50px;
+  margin: 10px, 0px, 10px, 0px;
+
 }
