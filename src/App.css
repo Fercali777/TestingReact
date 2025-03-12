@@ -1,6 +1,15 @@
 header {
  
 }
+footer {
+
+  text-align: center;
+  color: rgba(202, 255, 89, 0.499);
+  font-family: 'Trebuchet MS', sans-serif ;
+  font-size: 20px;
+  margin-top: 30px;
+
+}
 
 #root{
   width: 100%;

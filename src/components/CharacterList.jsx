@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function CharacterList() {
+function CharacterList() {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
@@ -10,6 +10,11 @@ export default function CharacterList() {
             .catch(error => console.error("Error al obtener los personajes:", error));
             console.log ("I did fetch")
     }, []);
+    
+    
+
+
+
 
     return (
         <div className="container">
@@ -25,12 +30,11 @@ export default function CharacterList() {
                     </div>
 
 
-
-   
-                        
-                    
                 ))}
             </div>
         </div>
     );
 }
+
+
+export default CharacterList;

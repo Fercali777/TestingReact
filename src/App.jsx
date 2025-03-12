@@ -1,31 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 import Header from "./components/header";
-import Footer from './components/footer';
-
-
+import Footer from "./components/footer";
+import BtnShowContent from "./components/btn-load-content";
 import CharacterList from "./components/CharacterList";
 
 function App() {
-    return (
-        <div className='container'>
-            <Header />
-            <CharacterList />
-            <Footer />
-        </div>
-    );
-}
+  const [showCharacters, setShowCharacters] = useState(false);
 
+  const handleClick = () => {
+    if (!showCharacters) {
+      setShowCharacters(true); 
+    }
+  };
+
+  return (
+    <div className="container">
+      <Header />
+      <button onClick={handleClick}>Mostrar Personajes</button>
+      {showCharacters && <CharacterList />}{" "}
+      
+      
+      {/* <BtnShowContent /> */}
+      {/* <CharacterList /> */}
+      <Footer />
+
+    </div>
+  );
+}
 
 export default App;
 
-
-
 // function App() {
 //   const [count, setCount] = useState(0)
-
 
 //   return (
 //     <>
@@ -49,7 +58,6 @@ export default App;
 //           Edit <code>src/App.jsx</code> and save to test HMR
 //         </p>
 //       </div>
-
 
 //       <Footer />
 //     </>
